@@ -1,5 +1,7 @@
 import {createElement} from '../render.js';
 
+let moviesCounter = 50;
+
 const getRating = (moviesWatched) => {
     if (moviesWatched >= 1 && moviesWatched <= 10) {
         return 'Novice';
@@ -30,7 +32,7 @@ const createRatingTemplate = (moviesWatched) => {
 
 export default class RatingView {
     getTemplate() {
-        return createRatingTemplate(40);
+        return createRatingTemplate(moviesCounter);
     }
 
     getElement() {

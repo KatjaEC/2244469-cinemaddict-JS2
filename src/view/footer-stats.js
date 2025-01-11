@@ -1,10 +1,20 @@
 import {createElement} from '../render.js';
 
-export default class ShowMoreBtn {
-    getTemplate() {
+let amount = '130 291';
+
+const getStats = (moviesAmount) => {
+    if (parseInt(moviesAmount) > 0) {
         return (
-            `<button class="films-list__show-more">Show more</button>`
+            `<p>${moviesAmount} movies inside</p>`
         );
+    } else {
+        return `<p>0 movies inside</p>`;
+    }
+};
+
+export default class FooterStats {
+    getTemplate() {
+        return getStats(amount);
     }
 
     getElement() {
