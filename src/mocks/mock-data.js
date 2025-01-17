@@ -59,7 +59,7 @@ export const movies = [
             description: 'Burlesque comic Ralph "Skid" Johnson (Skelly), and specialty dancer Bonny Lee King (Carroll), end up together on a cold, rainy night at a tr…',
         },
         commentsCount: 5,
-        comments: [1, 2, 3, 4, 5],
+        commentsIDs: [],
     },
     {
         id: '2',
@@ -86,7 +86,7 @@ export const movies = [
         // image: './images/posters/sagebrush-trail.jpg',
         // description: `Sentenced for a murder he did not commit, John Brant escapes from prison determined to find the real killer. By chance Brant's narrow escap…`,
         commentsCount: 89,
-        comments: [],
+        commentsIDs: [],
     },
     {
         id: '3',
@@ -113,7 +113,7 @@ export const movies = [
         // image: './images/posters/the-man-with-the-golden-arm.jpg',
         // description: 'Frankie Machine (Frank Sinatra) is released from the federal Narcotic Farm in Lexington, Kentucky with a set of drums and a new outlook on…',
         commentsCount: 18,
-        comments: [],
+        commentsIDs: [],
     },
     {
         id: '4',
@@ -140,7 +140,7 @@ export const movies = [
         // image: './images/posters/santa-claus-conquers-the-martians.jpg',
         // description: 'The Martians Momar ("Mom Martian") and Kimar ("King Martian") are worried that their children Girmar ("Girl Martian") and Bomar ("Boy Marti…',
         commentsCount: 465,
-        comments: [],
+        commentsIDs: [],
     },
     {
         id: '5',
@@ -167,24 +167,26 @@ export const movies = [
         // image: './images/posters/popeye-meets-sinbad.png',
         // description: 'In this short, Sindbad the Sailor (presumably Bluto playing a "role") proclaims himself, in song, to be the greatest sailor, adventurer and…',
         commentsCount: 0,
-        comments: [],
+        commentsIDs: [],
     },
     {
         id: '6',
         movieInfo: {
             title: 'The Great Flamarion',
-            altTitle: '',
+            altTitle: 'Original: The Great Flamarion',
             rating: '8.9',
             image: './images/posters/the-great-flamarion.jpg',
-            director: '',
-            writers: [],
-            actors: [],
-            releaseDate: '',
-            releaseCountry: '',
+            director: 'Anthony Mann',
+            writers: ['Anne Wigton', ' Heinz Herald', ' Richard Weil'],
+            actors: ['Erich von Stroheim', ' Mary Beth Hughes', ' Dan Duryea'],
+            releaseDate: '30 March 1945',
+            releaseCountry: 'USA',
             runtime: '78',
-            genres: ['Mystery'],
+            genres: ['Drama', ' Film-Noir', ' Mystery'],
             year: '1945', // FOR NOW
+            ageRating: '18+',
             description: 'The film opens following a murder at a cabaret in Mexico City in 1936, and then presents the events leading up to it in flashback. The Grea…',
+            descriptionFull: `The film opens following a murder at a cabaret in Mexico City in 1936, and then presents the events leading up to it in flashback. The Great Flamarion (Erich von Stroheim) is an arrogant, friendless, and misogynous marksman who displays his trick gunshot act in the vaudeville circuit. His show features a beautiful assistant, Connie (Mary Beth Hughes) and her drunken husband Al (Dan Duryea), Flamarion's other assistant. Flamarion falls in love with Connie, the movie's femme fatale, and is soon manipulated by her into killing her no good husband during one of their acts.`,
         },
         // title: 'The Great Flamarion',
         // rating: '8.9',
@@ -194,7 +196,7 @@ export const movies = [
         // image: './images/posters/the-great-flamarion.jpg',
         // description: 'The film opens following a murder at a cabaret in Mexico City in 1936, and then presents the events leading up to it in flashback. The Grea…',
         commentsCount: 12,
-        comments: [],
+        commentsIDs: [1, 2, 3, 4],
     },
     {
         id: '7',
@@ -221,6 +223,68 @@ export const movies = [
         // image: './images/posters/made-for-each-other.png',
         // description: 'John Mason (James Stewart) is a young, somewhat timid attorney in New York City. He has been doing his job well, and he has a chance of bei…',
         commentsCount: 56,
-        comments: [],
+        commentsIDs: [],
     },
 ];
+
+export const comments = [
+    {
+        id: '1',
+        author: 'Tim Macoveev',
+        date: '2019/12/31 23:59',
+        commentText: 'Interesting setting and a good cast',
+        emojiImage: './images/emoji/smile.png',
+        emojiAltText: 'emoji-smile',
+    },
+    {
+        id: '2',
+        author: 'John Doe',
+        date: '2 days ago',
+        commentText: 'Booooooooooring',
+        emojiImage: './images/emoji/sleeping.png',
+        emojiAltText: 'emoji-sleeping',
+    },
+    {
+        id: '3',
+        author: 'John Doe',
+        date: '2 days ago',
+        commentText: 'Very very old. Meh',
+        emojiImage: './images/emoji/puke.png',
+        emojiAltText: 'emoji-puke',
+    },
+    {
+        id: '4',
+        author: 'John Doe',
+        date: 'Today',
+        commentText: 'Almost two hours? Seriously?',
+        emojiImage: './images/emoji/angry.png',
+        emojiAltText: 'emoji-angry',
+    },
+];
+
+// export const emojis = [
+//     {
+//         emojiImage: './images/emoji/smile.png',
+//         id: 'emoji-smile',
+//         value: 'smile',
+//         checkedStatus: 'checked',
+//     },
+//     {
+//         emojiImage: './images/emoji/sleeping.png',
+//         id: 'emoji-sleeping',
+//         value: 'sleeping',
+//         checkedStatus: '',
+//     },
+//     {
+//         emojiImage: './images/emoji/puke.png',
+//         id: 'emoji-puke',
+//         value: 'puke',
+//         checkedStatus: '',
+//     },
+//     {
+//         emojiImage: './images/emoji/angry.png',
+//         id: 'emoji-angry',
+//         value: 'angry',
+//         checkedStatus: '',
+//     },
+// ];
