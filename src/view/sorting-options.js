@@ -7,6 +7,7 @@ const createSortingTemplate = (title, classMods) => {
         return `<li><a href="#" class="sort__button">${title}</a></li>`
     }
 };
+
 export default class SortingOptions {
     constructor(title, classMods) {
         this.title = title;

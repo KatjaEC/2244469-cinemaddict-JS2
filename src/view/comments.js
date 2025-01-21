@@ -1,17 +1,4 @@
-import {comments} from '../mocks/mock-data.js';
 import {createElement} from '../render.js';
-
-export const createCommentsListContainer = (commentsCount) => {
-    return (
-        `<div class="film-details__bottom-container">
-            <section class="film-details__comments-wrap">
-                <h3 class="film-details__comments-title">Comments <span class="film-details__comments-count">${commentsCount}</span></h3>
-                <ul class="film-details__comments-list">
-                </ul>
-            </section>
-        </div>`
-    );
-};
 
 const createCommentLiElement = (emojiImg, emojiAltText, commentText, commentAuthor, commentDate) => {
     return (
@@ -31,7 +18,7 @@ const createCommentLiElement = (emojiImg, emojiAltText, commentText, commentAuth
     );
 };
 
-export default class popupCommentsEl {
+export default class PopupCommentsEl {
     constructor(emojiImg, emojiAltText, commentText, commentAuthor, commentDate) {
         this.emojiImg = emojiImg;
         this.emojiAltText = emojiAltText;

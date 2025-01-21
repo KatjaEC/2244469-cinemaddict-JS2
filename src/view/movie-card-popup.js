@@ -1,21 +1,5 @@
 import {createElement} from '../render.js';
 
-// export const getMoviesSection = () => {
-//     const moviesContainer = document.createElement('section');
-//     moviesContainer.classList = 'films';
-//     const moviesList = document.createElement('section');
-//     moviesList.classList = 'films-list';
-//     const moviesSectionTitle = document.createElement('h2');
-//     moviesSectionTitle.classList = 'films-list__title visually-hidden';
-//     moviesSectionTitle.innerHTML = 'All movies. Upcoming';
-//     const moviesListWrapper = document.createElement('div');
-//     moviesListWrapper.classList = 'films-list__container';
-//     moviesContainer.append(moviesList);
-//     moviesList.append(moviesSectionTitle);
-//     moviesList.append(moviesListWrapper);
-//     return moviesContainer;
-// };
-
 const createPopupSection = (image, ageRating, title, altTitle, rating, director, writers, actors, releaseDate, runtime, country, genres, descriptionFull) => {
     return (
         `<section class="film-details">
